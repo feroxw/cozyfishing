@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "T": {
+      "item": "minecraft:light_blue_glazed_terracotta"
+    }
+  },
+  "pattern": [
+    "   ",
+    "T T",
+    "TTT"
+  ],
+  "result": {
+    "count": 1,
+    "item": "cozyfoods:light_blue_kettle"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "cozyfoods:block/lychee_door_bottom",
+    "top": "cozyfoods:block/lychee_door_top"
+  }
+}

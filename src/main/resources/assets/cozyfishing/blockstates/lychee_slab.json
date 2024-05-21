@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cozyfoods:block/lychee_slab"
+    },
+    "type=double": {
+      "model": "cozyfoods:block/lychee_planks"
+    },
+    "type=top": {
+      "model": "cozyfoods:block/lychee_slab_top"
+    }
+  }
+}

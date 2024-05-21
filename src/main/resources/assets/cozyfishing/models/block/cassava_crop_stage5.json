@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "cozyfoods:block/cassava_crop_stage7"
+  },
+  "render_type": "cutout"
+}

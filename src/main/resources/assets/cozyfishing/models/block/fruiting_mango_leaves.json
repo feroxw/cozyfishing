@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cozyfoods:block/fruiting_mango_leaves"
+  },
+  "render_type": "cutout"
+}

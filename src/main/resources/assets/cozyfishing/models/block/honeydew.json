@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cozyfoods:block/honeydew",
+    "side": "cozyfoods:block/honeydew"
+  }
+}

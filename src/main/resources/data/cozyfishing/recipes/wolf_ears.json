@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "M": {
+      "item": "minecraft:bone"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    " M ",
+    "LLL",
+    "L L"
+  ],
+  "result": {
+    "count": 1,
+    "item": "cozyfoods:wolf_ears"
+  }
+}

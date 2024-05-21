@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    },
+    "X": {
+      "item": "cozyfoods:tapioca_pearls"
+    }
+  },
+  "pattern": [
+    "WGW",
+    "GXG",
+    "WGW"
+  ],
+  "result": {
+    "item": "cozyfoods:decorative_blender"
+  }
+}

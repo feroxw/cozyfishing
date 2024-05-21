@@ -1,0 +1,58 @@
+{
+  "ambientocclusion": false,
+  "render_type": "cutout",
+  "textures": {
+    "particle": "minecraft:block/vine",
+    "vine": "cozyfoods:block/honeydew_crop_stage7",
+    "honeydew": "cozyfoods:block/honeydew_fruit",
+    "4": "cozyfoods:block/vine_experiment"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 8],
+      "to": [32, 16, 8],
+      "rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
+
+      "faces": {
+        "north": {
+          "texture": "#vine",
+          "uv": [16, 0, 0, 16],
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#vine",
+          "uv": [0, 0, 16, 16],
+          "tintindex": 0
+        }
+      }
+    },
+    {
+      "name": "fruit1",
+      "from": [0, 2, 0],
+      "to": [6, 8, 6],
+      "rotation": {"angle": 22.5, "axis": "z", "origin": [3, 8, 3]},
+      "faces": {
+        "north": {"uv": [0, 0, 6, 6], "texture": "#honeydew"},
+        "east": {"uv": [0, 0, 6, 6], "texture": "#honeydew"},
+        "south": {"uv": [0, 6, 6, 0], "texture": "#honeydew"},
+        "west": {"uv": [6, 0, 0, 6], "texture": "#honeydew"},
+        "up": {"uv": [0, 0, 6, 6], "texture": "#honeydew"},
+        "down": {"uv": [0, 0, 6, 6], "texture": "#honeydew"}
+      }
+    },
+    {
+      "name": "fruit2",
+      "from": [10, 6, 8],
+      "to": [14, 10, 12],
+      "rotation": {"angle": 22.5, "axis": "x", "origin": [12, 8, 10]},
+      "faces": {
+        "north": {"uv": [9, 1, 14, 6.33333], "texture": "#honeydew"},
+        "east": {"uv": [10, 10, 14, 14.33333], "texture": "#honeydew"},
+        "south": {"uv": [0, 8, 5, 13.33333], "texture": "#honeydew"},
+        "west": {"uv": [0, 0, 5, 5.33333], "texture": "#honeydew"},
+        "up": {"uv": [0, 0, 5, 5.33333], "texture": "#honeydew"},
+        "down": {"uv": [5, 6, 10, 11.33333], "texture": "#honeydew"}
+      }
+    }
+  ]
+}

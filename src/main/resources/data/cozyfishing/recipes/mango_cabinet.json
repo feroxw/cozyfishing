@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": {
+      "item": "cozyfoods:mango_planks"
+    },
+    "S": {
+      "item": "cozyfoods:mango_slab"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "P P",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "item": "cozyfoods:mango_cabinet"
+  }
+}

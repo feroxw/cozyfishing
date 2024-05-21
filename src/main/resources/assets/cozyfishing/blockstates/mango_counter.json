@@ -1,0 +1,36 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "cozyfoods:block/mango_counter"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/mango_counter", "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/mango_counter", "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/mango_counter", "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "cozyfoods:kettle",
+  "ingredients": [
+    {
+      "item": "cozyfoods:black_tea_leaf"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "output": {
+    "item": "cozyfoods:black_tea"
+  }
+}

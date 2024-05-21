@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "cozyfoods:mango_planks"
+    },
+    "D": {
+      "item": "minecraft:polished_blackstone_slab"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "cozyfoods:mango_counter"
+  }
+}

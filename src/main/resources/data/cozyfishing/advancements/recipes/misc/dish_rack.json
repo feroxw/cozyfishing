@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cozyfoods:dish_rack"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cozyfoods:mango_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_planks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cozyfoods:dish_rack"
+    ]
+  }
+}

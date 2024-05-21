@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "R": {
+      "item": "minecraft:red_dye"
+    },
+    "#": {
+      "item": "cozyfoods:mango_planks"
+    },
+    "D": {
+      "item": "cozyfoods:mango_slab"
+    }
+  },
+  "pattern": [
+    " R ",
+    "DDD",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "item": "cozyfoods:mango_table_fancy"
+  }
+}

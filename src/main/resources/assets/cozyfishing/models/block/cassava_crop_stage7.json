@@ -1,0 +1,46 @@
+{
+  "ambientocclusion": false,
+  "render_type": "cutout",
+  "textures": {
+    "particle": "minecraft:block/vine",
+    "vine": "cozyfoods:block/cassava_crop_stage7"
+  },
+  "elements": [
+    {
+      "name": "leaf1",
+      "from": [-8, 32, 8],
+      "to": [24, 0, 8],
+      "rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
+      "faces": {
+        "north": {
+          "texture": "#vine",
+          "uv": [0, 16, 16, 0],
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#vine",
+          "uv": [16, 16, 0, 0],
+          "tintindex": 0
+        }
+      }
+    },
+    {
+      "name": "leaf2",
+      "from": [-8, 32, 8],
+      "to": [24, 0, 8],
+      "rotation": {"angle": -45, "axis": "y", "origin": [8, 0, 8]},
+      "faces": {
+        "north": {
+          "texture": "#vine",
+          "uv": [0, 16, 16, 0],
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#vine",
+          "uv": [16, 16, 0, 0],
+          "tintindex": 0
+        }
+      }
+    }
+  ]
+}

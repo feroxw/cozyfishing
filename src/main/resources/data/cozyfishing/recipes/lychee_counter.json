@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "cozyfoods:lychee_planks"
+    },
+    "D": {
+      "item": "minecraft:polished_diorite_slab"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "cozyfoods:lychee_counter"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "cozyfoods:block/cash_register/cash_register"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/cash_register/cash_register", "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/cash_register/cash_register", "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/cash_register/cash_register", "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    }
+  ]
+}

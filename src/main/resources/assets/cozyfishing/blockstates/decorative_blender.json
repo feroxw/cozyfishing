@@ -1,0 +1,108 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender", "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender", "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender", "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender/thai"
+      },
+      "when": {
+        "level": "0"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender/taro"
+      },
+      "when": {
+        "level": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender/mango"
+      },
+      "when": {
+        "level": "2"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender/honeydew"
+      },
+      "when": {
+        "level": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender/jasmine"
+      },
+      "when": {
+        "level": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender/matcha"
+      },
+      "when": {
+        "level": "5"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender/white_red_blue"
+      },
+      "when": {
+        "level": "6"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender/rainbow"
+      },
+      "when": {
+        "level": "7"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/decorative_blender/purple_stripe"
+      },
+      "when": {
+        "level": "8"
+      }
+    }
+  ]
+}

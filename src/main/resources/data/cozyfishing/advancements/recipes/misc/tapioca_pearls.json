@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cozyfoods:tapioca_pearls"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_spoon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cozyfoods:cassava"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_spoon",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cozyfoods:tapioca_pearls"
+    ]
+  }
+}

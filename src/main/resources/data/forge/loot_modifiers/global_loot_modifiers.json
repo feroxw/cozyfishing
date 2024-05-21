@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "entries": [
+    "cozyfoods:add_seeds_village_desert",
+    "cozyfoods:add_seeds_village_plains",
+    "cozyfoods:add_seeds_village_savanna",
+    "cozyfoods:add_seeds_village_snowy",
+    "cozyfoods:add_seeds_village_taiga",
+    "cozyfoods:add_seeds_village_farmer"
+  ]
+}

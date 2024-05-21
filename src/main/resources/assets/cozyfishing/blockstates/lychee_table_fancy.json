@@ -1,0 +1,36 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "cozyfoods:block/lychee_table_fancy"
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/lychee_table_fancy", "y": 90
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/lychee_table_fancy", "y": 180
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "cozyfoods:block/lychee_table_fancy", "y": 270
+      },
+      "when": {
+        "facing": "west"
+      }
+    }
+  ]
+}

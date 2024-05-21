@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "minecraft:clay_ball"
+    },
+    "P": {
+      "item": "cozyfoods:mango_planks"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "PPP"
+  ],
+  "result": {
+    "count": 2,
+    "item": "cozyfoods:dish_rack"
+  }
+}

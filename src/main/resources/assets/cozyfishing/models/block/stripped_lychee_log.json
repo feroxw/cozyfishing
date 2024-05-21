@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cozyfoods:block/stripped_lychee_log_top",
+    "side": "cozyfoods:block/stripped_lychee_log"
+  }
+}

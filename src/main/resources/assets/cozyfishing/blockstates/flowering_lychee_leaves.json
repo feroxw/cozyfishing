@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "cozyfoods:block/flowering_lychee_leaves"
+    },
+    "age=1": {
+      "model": "cozyfoods:block/flowering_lychee_leaves"
+    },
+    "age=2": {
+      "model": "cozyfoods:block/flowering_lychee_leaves"
+    },
+    "age=3": {
+      "model": "cozyfoods:block/flowering_lychee_leaves"
+    },
+    "age=4": {
+      "model": "cozyfoods:block/flowering_lychee_leaves"
+    },
+    "age=5": {
+      "model": "cozyfoods:block/flowering_lychee_leaves"
+    },
+    "age=6": {
+      "model": "cozyfoods:block/flowering_lychee_leaves"
+    },
+    "age=7": {
+      "model": "cozyfoods:block/fruiting_lychee_leaves"
+    }
+  }
+}

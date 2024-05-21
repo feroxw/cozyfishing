@@ -1,0 +1,32 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"render_type": "cutout",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "cozyfoods:block/wild_taro",
+		"particle": "cozyfoods:block/wild_taro"
+	},
+	"elements": [
+		{
+			"name": "leaf1",
+			"from": [-8, 32, 8],
+			"to": [24, 0, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 16, 16, 0], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [16, 16, 0, 0], "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"name": "leaf2",
+			"from": [-8, 32, 8],
+			"to": [24, 0, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 16, 16, 0], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [16, 16, 0, 0], "texture": "#0", "tintindex": 0}
+			}
+		}
+	]
+}

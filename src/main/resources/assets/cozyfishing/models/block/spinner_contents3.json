@@ -1,0 +1,18 @@
+{
+    "textures": {
+        "particle": "cozyfoods:block/spinner_contents",
+        "inside": "cozyfoods:block/spinner_contents"
+    },
+    "elements": [
+        {   "from": [ 5, 3, 5 ],
+            "to": [ 11, 9, 11 ],
+            "faces": {
+                "up": { "texture": "#inside" },
+                "north": {"uv": [0, 0, 8, 5], "texture": "#inside"},
+                "east": {"uv": [0, 0, 8, 5], "texture": "#inside"},
+                "south": {"uv": [0, 0, 8, 5], "texture": "#inside"},
+                "west": {"uv": [0, 0, 8, 5], "texture": "#inside"}
+            }
+        }
+    ]
+}

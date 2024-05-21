@@ -1,0 +1,7 @@
+{
+  "parent": "cozyfoods:block/template_kettle",
+  "textures": {
+    "pattern1": "cozyfoods:block/kettle/yellow_glazed_terracotta_stitched1",
+    "pattern2": "cozyfoods:block/kettle/yellow_glazed_terracotta_stitched2"
+  }
+}

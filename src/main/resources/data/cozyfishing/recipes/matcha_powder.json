@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cozyfoods:green_tea_leaf"
+    }
+  ],
+  "result": {
+    "item": "cozyfoods:matcha_powder"
+  }
+}

@@ -1,0 +1,52 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"3": "cozyfoods:block/tea_bush_crop_stage3",
+		"particle": "cozyfoods:block/lychee_log_top"
+	},
+	"ambientocclusion": false,
+	"render_type": "cutout",
+	"elements": [
+		{
+			"name": "fluff1",
+			"from": [8, -8, -5],
+			"to": [8, 14, 21],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, -8, -8]},
+			"faces": {
+				"east": {"uv": [1, 2.5, 14, 13.5], "texture": "#3"},
+				"west": {"uv": [1, 2.5, 14, 13.5], "texture": "#3"}
+			}
+		},
+		{
+			"name": "fluff2",
+			"from": [-3, -8, 0],
+			"to": [-3, 14, 26],
+			"rotation": {"angle": 45, "axis": "y", "origin": [-3, -8, -3]},
+			"faces": {
+				"east": {"uv": [1, 2.5, 14, 13.5], "texture": "#3"},
+				"west": {"uv": [1, 2.5, 14, 13.5], "texture": "#3"}
+			}
+		},
+		{
+			"name": "fluff3",
+			"from": [-5, -8, 8],
+			"to": [21, 14, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, -8, 8]},
+			"faces": {
+				"north": {"uv": [1, 2.5, 14, 13.5], "texture": "#3"},
+				"south": {"uv": [1, 2.5, 14, 13.5], "texture": "#3"}
+			}
+		},
+		{
+			"name": "fluff4",
+			"from": [0, -8, 19],
+			"to": [26, 14, 19],
+			"rotation": {"angle": 45, "axis": "y", "origin": [-3, -8, 19]},
+			"faces": {
+				"north": {"uv": [1, 2.5, 14, 13.5], "texture": "#3"},
+				"south": {"uv": [1, 2.5, 14, 13.5], "texture": "#3"}
+			}
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "cozyfoods:block/taro_crop_stage0"
+    },
+    "age=1": {
+      "model": "cozyfoods:block/taro_crop_stage0"
+    },
+    "age=2": {
+      "model": "cozyfoods:block/taro_crop_stage0"
+    },
+    "age=3": {
+      "model": "cozyfoods:block/taro_crop_stage3"
+    },
+    "age=4": {
+      "model": "cozyfoods:block/taro_crop_stage3"
+    },
+    "age=5": {
+      "model": "cozyfoods:block/taro_crop_stage3"
+    },
+    "age=6": {
+      "model": "cozyfoods:block/taro_crop_stage3"
+    },
+    "age=7": {
+      "model": "cozyfoods:block/taro_crop_stage7"
+    }
+  }
+}

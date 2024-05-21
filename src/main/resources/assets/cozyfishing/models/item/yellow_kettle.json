@@ -1,0 +1,39 @@
+{
+  "parent": "cozyfoods:block/yellow_kettle",
+  "display": {
+    "gui": {
+      "rotation": [
+        31,
+        142,
+        0
+      ],
+      "translation": [
+        0.1,
+        0.6,
+        0.5
+      ],
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    }
+  }
+}

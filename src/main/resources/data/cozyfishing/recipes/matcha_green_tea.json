@@ -1,0 +1,17 @@
+{
+  "type": "cozyfoods:kettle",
+  "ingredients": [
+    {
+      "item": "cozyfoods:green_tea_leaf"
+    },
+    {
+      "item": "cozyfoods:matcha_powder"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "output": {
+    "item": "cozyfoods:matcha_green_tea"
+  }
+}

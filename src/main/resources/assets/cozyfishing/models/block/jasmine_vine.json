@@ -1,0 +1,52 @@
+{
+  "credit": "Made with Blockbench",
+  "ambientocclusion": false,
+  "render_type": "cutout",
+  "textures": {
+    "0": "cozyfoods:block/jasmine_vine",
+    "1": "cozyfoods:block/jasmine_vine_flowers",
+    "particle": "cozyfoods:block/jasmine_vine"
+  },
+  "elements": [
+    {
+      "name": "vines",
+      "from": [7, 0, 13.5],
+      "to": [15, 16, 13.5],
+      "rotation": {"angle": 22.5, "axis": "y", "origin": [14, 0, 14]},
+      "faces": {
+        "north": {"uv": [0, 0, 8, 16], "texture": "#0"},
+        "south": {"uv": [0, 0, 8, 16], "texture": "#0"}
+      }
+    },
+    {
+      "name": "flowers",
+      "from": [6, 0, 12.5],
+      "to": [14, 16, 12.5],
+      "rotation": {"angle": 22.5, "axis": "y", "origin": [13, 0, 13]},
+      "faces": {
+        "north": {"uv": [0, 0, 8, 16], "texture": "#1"},
+        "south": {"uv": [0, 0, 8, 16], "texture": "#1"}
+      }
+    },
+    {
+      "name": "vines",
+      "from": [0, 0, 16.5],
+      "to": [8, 16, 16.5],
+      "rotation": {"angle": -22.5, "axis": "y", "origin": [7, 0, 17]},
+      "faces": {
+        "north": {"uv": [8, 0, 16, 16], "texture": "#0"},
+        "south": {"uv": [8, 0, 16, 16], "texture": "#0"}
+      }
+    },
+    {
+      "name": "flowers",
+      "from": [0, 0, 15.5],
+      "to": [8, 16, 15.5],
+      "rotation": {"angle": -22.5, "axis": "y", "origin": [7, 0, 16]},
+      "faces": {
+        "north": {"uv": [8, 0, 16, 16], "texture": "#1"},
+        "south": {"uv": [8, 0, 16, 16], "texture": "#1"}
+      }
+    }
+  ]
+}

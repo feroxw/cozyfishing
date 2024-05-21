@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cozyfoods:jasmine_milk_tea"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_spoon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cozyfoods:spinner"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_spoon",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cozyfoods:jasmine_milk_tea"
+    ]
+  }
+}

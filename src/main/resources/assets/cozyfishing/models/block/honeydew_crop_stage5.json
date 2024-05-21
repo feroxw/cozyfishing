@@ -1,0 +1,28 @@
+{
+  "ambientocclusion": false,
+  "render_type": "cutout",
+  "textures": {
+    "particle": "minecraft:block/vine",
+    "vine": "cozyfoods:block/honeydew_crop_stage5"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 8],
+      "to": [32, 16, 8],
+      "rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8]},
+
+      "faces": {
+        "north": {
+          "texture": "#vine",
+          "uv": [16, 0, 0, 16],
+          "tintindex": 0
+        },
+        "south": {
+          "texture": "#vine",
+          "uv": [0, 0, 16, 16],
+          "tintindex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "cozyfoods:spinner",
+  "ingredients": [
+    {
+      "tag": "cozyfoods:cookable_ice"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "cozyfoods:matcha_green_tea"
+    }
+  ],
+  "output": {
+    "item": "cozyfoods:matcha_milk_tea"
+  }
+}

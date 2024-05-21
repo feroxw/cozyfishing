@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "cozyfoods:lychee_slab"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "D": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "pattern": [
+    "S  ",
+    "LDL",
+    "S S"
+  ],
+  "result": {
+    "count": 1,
+    "item": "cozyfoods:lychee_chair"
+  }
+}

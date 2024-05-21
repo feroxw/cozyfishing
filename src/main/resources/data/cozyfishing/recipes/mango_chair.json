@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "L": {
+      "item": "cozyfoods:mango_slab"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "D": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "pattern": [
+    "S  ",
+    "LDL",
+    "S S"
+  ],
+  "result": {
+    "count": 1,
+    "item": "cozyfoods:mango_chair"
+  }
+}

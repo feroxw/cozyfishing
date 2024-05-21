@@ -1,0 +1,23 @@
+{
+  "type": "cozyfoods:spinner",
+  "ingredients": [
+    {
+      "tag": "cozyfoods:cookable_ice"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "cozyfoods:black_teas"
+    },
+    {
+      "item": "cozyfoods:taro"
+    },
+    {
+      "item": "cozyfoods:tapioca_pearls"
+    }
+  ],
+  "output": {
+    "item": "cozyfoods:taro_bubble_tea"
+  }
+}
