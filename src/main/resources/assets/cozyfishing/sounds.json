@@ -1,0 +1,32 @@
+{
+  "FishHit": {
+    "subtitles": "sounds.cozyfishing.FishHit",
+    "sounds": [
+      "cozyfishing:FishHit"
+    ]
+  },
+  "fishBite": {
+    "subtitles": "sounds.cozyfishing.fishBite",
+    "sounds": [
+      "cozyfishing:fishBite"
+    ]
+  },
+  "jingle1": {
+    "subtitles": "sounds.cozyfishing.jingle1",
+    "sounds": [
+      "cozyfishing:jingle1"
+    ]
+  },
+  "slowReel": {
+    "subtitles": "sounds.cozyfishing.slowReel",
+    "sounds": [
+      "cozyfishing:slowReel"
+    ]
+  },
+  "fastReel": {
+    "subtitles": "sounds.cozyfishing.fastReel",
+    "sounds": [
+      "cozyfishing:fastReel"
+    ]
+  }
+}

@@ -2,7 +2,10 @@ package net.mazee.cozyfishing.block.custom;
 
 import net.mazee.cozyfishing.block.entity.ModBlockEntities;
 import net.mazee.cozyfishing.block.entity.SDVFishingEntity;
+import net.mazee.cozyfishing.screen.SDVFishingScreen;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -46,21 +49,6 @@ public class SDVFishingBlock extends BaseEntityBlock {
         return SHAPE;
     }
 
-//    @Override
-//    public BlockState getStateForPlacement() {
-//        return this.defaultBlockState();
-//    }
-
-//    @Override
-//    public BlockState rotate(BlockState pState, Rotation pRotation) {
-//        return pState.setValue(FACING, pRotation.rotate(pState.getValue(FACING)));
-//    }
-//
-//    @Override
-//    public BlockState mirror(BlockState pState, Mirror pMirror) {
-//        return pState.rotate(pMirror.getRotation(pState.getValue(FACING)));
-//    }
-
 
 
     @Override
@@ -103,14 +91,15 @@ public class SDVFishingBlock extends BaseEntityBlock {
             }else {
                 BlockEntity entity = pLevel.getBlockEntity(pPos);
                 if(entity instanceof SDVFishingEntity) {
-                    NetworkHooks.openScreen(((ServerPlayer)pPlayer), (SDVFishingEntity)entity, pPos);
+                    //NetworkHooks.openScreen(((ServerPlayer)pPlayer), (SDVFishingEntity)entity, pPos);
+                    //Minecraft.getInstance().setScreen(new SDVFishingScreen(Component.literal("FISHING")));
                 } else {
                     throw new IllegalStateException("Our Container provider is missing!");
                 }
             }
 
-
-
+        }else{
+            Minecraft.getInstance().setScreen(new SDVFishingScreen(Component.literal("FISHING"), pPlayer));
         }
 
         return InteractionResult.sidedSuccess(pLevel.isClientSide());

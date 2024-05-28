@@ -2,7 +2,12 @@ package net.mazee.cozyfishing.item.custom;
 
 import net.mazee.cozyfishing.block.ModBlocks;
 import net.mazee.cozyfishing.block.custom.SDVFishingBlock;
+import net.mazee.cozyfishing.entity.SDVFishingHook;
+import net.mazee.cozyfishing.screen.SDVFishingScreen;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -30,15 +35,17 @@ public class StardewFishingRodItem extends Item implements Vanishable {
         int i;
         if (pPlayer.fishing != null) {//Reeling in
             if (!pLevel.isClientSide) {
-//                i = pPlayer.fishing.retrieve(itemstack);
-//                itemstack.hurtAndBreak(i, pPlayer, (p_41288_) -> {
-//                    p_41288_.broadcastBreakEvent(pHand);
-//                });
+                i = pPlayer.fishing.retrieve(itemstack);
+                itemstack.hurtAndBreak(i, pPlayer, (p_41288_) -> {
+                    p_41288_.broadcastBreakEvent(pHand);
+                });
 
-                BlockPos posDiagNE = pPlayer.getOnPos().north(1).east(1).above(2);
-                BlockState stateDiagNE = pLevel.getBlockState(posDiagNE);
-                pLevel.setBlockAndUpdate(posDiagNE, ModBlocks.SDV_FISHING_BLOCK.get().defaultBlockState());
+//                BlockPos posDiagNE = pPlayer.getOnPos().north(1).east(1).above(2);
+//                BlockState stateDiagNE = pLevel.getBlockState(posDiagNE);
+//                pLevel.setBlockAndUpdate(posDiagNE, ModBlocks.SDV_FISHING_BLOCK.get().defaultBlockState());
 
+            }else{
+//
             }
 
             pLevel.playSound((Player)null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.FISHING_BOBBER_RETRIEVE, SoundSource.NEUTRAL, 1.0F, 0.4F / (pLevel.getRandom().nextFloat() * 0.4F + 0.8F));
@@ -48,7 +55,9 @@ public class StardewFishingRodItem extends Item implements Vanishable {
             if (!pLevel.isClientSide) {
                 i = EnchantmentHelper.getFishingSpeedBonus(itemstack);
                 int j = EnchantmentHelper.getFishingLuckBonus(itemstack);
-                pLevel.addFreshEntity(new FishingHook(pPlayer, pLevel, j, i));
+                SDVFishingHook newHook = new SDVFishingHook(pPlayer, pLevel, j, i);
+                pLevel.addFreshEntity(newHook);
+
             }
 
             pPlayer.awardStat(Stats.ITEM_USED.get(this));

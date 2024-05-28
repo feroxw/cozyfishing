@@ -53,7 +53,6 @@ public enum KeyBinding {
     }
 
     public boolean isPressed() {
-        System.out.println(keybind.isDown());
         if (!modifiable)
             return isKeyDown(key);
         return keybind.isDown();

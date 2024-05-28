@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cozyfoods:block/sdv_fishing_block"
+    }
+  }
+}

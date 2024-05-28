@@ -35,7 +35,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public class SDVFishingEntity extends BlockEntity implements MenuProvider {
+public class SDVFishingEntity extends BlockEntity {
     private final ItemStackHandler itemHandler = new ItemStackHandler(10){
         @Override
         protected void onContentsChanged(int slot){
@@ -75,88 +75,40 @@ public class SDVFishingEntity extends BlockEntity implements MenuProvider {
         }
     }
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
-    
-    protected final ContainerData data;
-    private int progress = 80;
-    private int maxProgress = 400;
-    private int bobberOffset = 50;
+
+    private float progress = 80;
+    private float maxProgress = 400;
+    private float bobberOffset = 50;
     private int bobberOffsetMax = 149 - 42;
-    private int bobberVelocity = 0;
-    private int bobberAcceleration = 1;
+    private float bobberVelocity = 0;
+    private float bobberAcceleration = 1;
     private int bobberSize = 42;
-    private double fishOffset = 70;
+    private float fishOffset = 70;
     private int fishOffsetMax = 149 - 15;
-    private double fishVelocity = 0;
-    private double fishAcceleration = 0.1;
+    private float fishVelocity = 0;
+    private float fishAcceleration = 0.1F;
     private int fishSize = 42;
-    private double fishVelocityMax = 2;
+    private float fishVelocityMax = 2;
 
 
 
 
     public SDVFishingEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.SDV_FISHING_ENTITY.get(), pPos, pBlockState);
-        this.data = new ContainerData(){
-            public double getFishOffset(){return SDVFishingEntity.this.fishOffset;};
-            public double getFishVelocity(){return SDVFishingEntity.this.fishVelocity;};
-            public double getFishAcceleration(){return SDVFishingEntity.this.fishAcceleration;};
-
-            @Override
-            public int get(int index) {
-                return switch (index) {
-                    case 0 -> SDVFishingEntity.this.progress;
-                    case 1 -> SDVFishingEntity.this.maxProgress;
-                    case 2 -> SDVFishingEntity.this.bobberOffset;
-                    case 3 -> SDVFishingEntity.this.bobberOffsetMax;
-                    case 4 -> SDVFishingEntity.this.bobberVelocity;
-                    case 5 -> SDVFishingEntity.this.bobberAcceleration;
-                    case 6 -> SDVFishingEntity.this.bobberSize;
-                    case 7 -> (int)SDVFishingEntity.this.fishOffset;
-                    case 8 -> SDVFishingEntity.this.fishOffsetMax;
-                    case 9 -> (int)SDVFishingEntity.this.fishVelocity;
-                    case 10 -> (int)SDVFishingEntity.this.fishAcceleration;
-                    case 11 -> SDVFishingEntity.this.fishSize;
-                    default -> 0;
-                };
-            }
-
-            @Override
-            public void set(int index, int value) {
-                switch (index) {
-                    case 0 -> SDVFishingEntity.this.progress = value;
-                    case 1 -> SDVFishingEntity.this.maxProgress = value;
-                    case 2 -> SDVFishingEntity.this.bobberOffset = value;
-                    case 3 -> SDVFishingEntity.this.bobberOffsetMax = value;
-                    case 4 -> SDVFishingEntity.this.bobberVelocity = value;
-                    case 5 -> SDVFishingEntity.this.bobberAcceleration = value;
-                    case 6 -> SDVFishingEntity.this.bobberSize = value;
-                    case 7 -> SDVFishingEntity.this.fishOffset = value;
-                    case 8 -> SDVFishingEntity.this.fishOffsetMax = value;
-                    case 9 -> SDVFishingEntity.this.fishVelocity = value;
-                    case 10 -> SDVFishingEntity.this.fishAcceleration = value;
-                    case 11 -> SDVFishingEntity.this.fishSize = value;
-                }
-            }
-
-            @Override
-            public int getCount() {
-                return 12;
-            }
-        };
     }
 
+    public float getProgress(){return this.progress;}
+    public float getProgressMax(){return this.maxProgress;}
+    public float getBobberOffset(){return this.bobberOffset;}
+    public float getFishOffset(){return this.fishOffset;}
+    public float getFishVelocity(){return this.fishVelocity;}
+    public float getFishAcceleration(){return this.fishAcceleration;}
 
 
-    @Override
-    public Component getDisplayName() {
-        return Component.literal("Fishing Event");
-    }
-
-    @Nullable
-    @Override
-    public AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
-        return new SDVFishingMenu(pContainerId, pPlayerInventory, this, this.data);
-    }
+//    @Nullable
+//    public AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
+//        return new SDVFishingMenu(pContainerId, pPlayerInventory, this, this.data);
+//    }
 
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
@@ -213,15 +165,12 @@ public class SDVFishingEntity extends BlockEntity implements MenuProvider {
         return this.bobberOffset <= this.fishOffset && (this.bobberOffset + this.bobberSize) >= this.fishOffset;
     }
 
-    public int getProgress(){
-        return this.progress;
-    }
 
     public void tick(Level level, BlockPos pos, BlockState state, SDVFishingEntity pEntity) {
         if(level.isClientSide()) {
             return;
         }
-
+        //System.out.println(pEntity.fishOffset);
         if(3 > 2) {
             if(pEntity.isTrackingFish()){
 //                if(pEntity.itemHandler.getStackInSlot(6).getCount() > 0){
@@ -231,10 +180,7 @@ public class SDVFishingEntity extends BlockEntity implements MenuProvider {
                 pEntity.progress = Math.min(pEntity.progress+1, pEntity.maxProgress);
 
             }else if(pEntity.getProgress() > 0){
-                pEntity.progress--;
-                //pEntity.bobberOffset--;
-                //pEntity.milkRemaining--;
-
+                pEntity.progress -= 1;
 
             }else{
                 //close menu
@@ -254,18 +200,18 @@ public class SDVFishingEntity extends BlockEntity implements MenuProvider {
 
 
             if(Math.random()*100 < 10){
-                pEntity.fishAcceleration = (Math.random()*1/5 - 0.1);
-                System.out.println("Fish Accel");
-                System.out.println(pEntity.fishAcceleration);
+                pEntity.fishAcceleration = (float)(Math.random()*1/5 - 0.1);
+//                System.out.println("Fish Accel");
+//                System.out.println(pEntity.fishAcceleration);
             }
             pEntity.fishVelocity += pEntity.fishAcceleration;
             pEntity.fishVelocity = Math.min(pEntity.fishVelocityMax, Math.max(pEntity.fishAcceleration + pEntity.fishVelocity, -pEntity.fishVelocityMax));
 
             pEntity.fishOffset = Math.min(pEntity.fishOffsetMax, Math.max(pEntity.fishOffset + pEntity.fishVelocity, 0));
-            System.out.println("Fish Velocity");
-            System.out.println(pEntity.fishVelocity);
-            System.out.println("Fish Offset");
-            System.out.println(pEntity.fishOffset);
+//            System.out.println("Fish Velocity");
+//            System.out.println(pEntity.fishVelocity);
+//            System.out.println("Fish Offset");
+//            System.out.println(pEntity.fishOffset);
 
             setChanged(level, pos, state);
 

@@ -21,6 +21,13 @@ public class ModCreativeModeTab {
 
                         pOutput.accept(ModItems.SDV_FISHING_ROD.get());
 
+                        pOutput.accept(ModItems.CATFISH.get());
+                        pOutput.accept(ModItems.HADDOCK.get());
+                        pOutput.accept(ModItems.RED_SNAPPER.get());
+                        pOutput.accept(ModItems.GREEN_SUNFISH.get());
+                        pOutput.accept(ModItems.FANTAIL.get());
+                        pOutput.accept(ModItems.GOLDFISH.get());
+
                         
                     })
                     .build());
